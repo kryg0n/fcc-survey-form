@@ -1,0 +1,97 @@
+html body {
+	margin: 0;
+	padding: 0;
+	background-color: #f05959;
+}
+
+header {
+	padding: 20px 50px 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(#9934e3, #f05959);
+}
+
+header h1,
+p {
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 2.5rem;
+}
+
+form {
+	margin: 60px;
+	padding: 40px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border: none;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	margin-top: -190px;
+}
+
+form label {
+	color: #fff;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin-top: 15px;
+}
+form input,
+select {
+	padding: 3px;
+	border-radius: 6px;
+	border-color: #707070;
+	border-style: solid;
+	border-width: 1px;
+	font-size: 0.9rem;
+}
+
+form fieldset {
+	border: none;
+	margin: 15px 0px;
+	padding: 0;
+}
+
+form fieldset legend {
+	color: #fff;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	font-size: 1.5rem;
+	margin-top: 15px;
+}
+
+form fieldset input {
+	margin: 7px 0px 7px 15px;
+}
+
+form fieldset label {
+	font-weight: normal;
+}
+
+textarea {
+	padding: 3px;
+	border-radius: 6px;
+	border-color: #707070;
+	border-style: solid;
+	border-width: 1px;
+}
+
+button {
+	width: max-content;
+	color: #fff;
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	font-size: 1.5rem;
+	background-color: #c346a1;
+	border: none;
+	border-radius: 5px;
+	padding: 7px;
+	align-self: center;
+	margin-top: 15px;
+}

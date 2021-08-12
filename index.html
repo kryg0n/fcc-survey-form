@@ -4,9 +4,142 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
 		<title>Document</title>
 	</head>
 	<body>
+		<header>
+			<h1 id="title">Sports' Survey</h1>
+			<p id="description">Thank you for taking kryg0n's Sports' survey</p>
+		</header>
+		<form action="" id="survey-form">
+			<label for="name" id="name-label">Name</label>
+			<input
+				type="text"
+				name="name"
+				id="name"
+				minlength="3"
+				placeholder="Enter Your Name"
+				required
+			/>
+			<label for="number" id="number-label">Age</label>
+			<input
+				type="number"
+				name="age"
+				id="number"
+				min="10"
+				max="99"
+				placeholder="Enter Your Age"
+				required
+			/>
+			<label for="dropdown">Gender</label>
+			<select name="gender" id="dropdown">
+				<option value="prefernotsay"></option>
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="binary">Binary</option>
+			</select>
+
+			<label for="email" id="email-label">Email</label>
+			<input
+				type="email"
+				name="email"
+				id="email"
+				placeholder="Enter Your Email Id"
+				required
+			/>
+			<fieldset>
+				<legend>Sports You Play</legend>
+				<div>
+					<input type="checkbox" name="sports" id="cricket" value="cricket" />
+					<label for="cricket">Cricket</label>
+				</div>
+				<div>
+					<input type="checkbox" name="sports" id="tennis" value="tennis" />
+					<label for="tennis">Tennis</label>
+				</div>
+				<div>
+					<input type="checkbox" name="sports" id="soccer" value="soccer" />
+					<label for="soccer">Soccer</label>
+				</div>
+				<div>
+					<input type="checkbox" name="sports" id="hockey" value="hockey" />
+					<label for="hockey">Hockey</label>
+				</div>
+				<div>
+					<input
+						type="checkbox"
+						name="sports"
+						id="basketball"
+						value="basketball"
+					/>
+					<label for="basketball">Basketball</label>
+				</div>
+				<div>
+					<input
+						type="checkbox"
+						name="sports"
+						id="volleyball"
+						value="volleyball"
+					/>
+					<label for="volleyball">Volleyball</label>
+				</div>
+				<div>
+					<input type="checkbox" name="sports" id="baseball" value="baseball" />
+					<label for="baseball">Baseball</label>
+				</div>
+				<div>
+					<input
+						type="checkbox"
+						name="sports"
+						id="tabletennis"
+						value="tabletennis"
+					/>
+					<label for="tabletennis">Table Tennis</label>
+				</div>
+				<div>
+					<input type="checkbox" name="sports" id="squash" value="squash" />
+					<label for="squash">Squash</label>
+				</div>
+				<div>
+					<input type="checkbox" name="sports" id="rugby" value="rugby" />
+					<label for="rugby">Rugby</label>
+				</div>
+				<div>
+					<input
+						type="checkbox"
+						name="sports"
+						id="badminton"
+						value="badminton"
+					/>
+					<label for="badminton">Badminton</label>
+				</div>
+				<div>
+					<input type="checkbox" name="sports" id="anyother" value="anyother" />
+					<label for="anyother">Any Other</label>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Do you want to go Professional</legend>
+				<div>
+					<input type="radio" name="gopro" id="yes" value="yes" />
+					<label for="yes">Yes</label>
+				</div>
+				<div>
+					<input type="radio" name="gopro" id="no" value="no" />
+					<label for="no">No</label>
+				</div>
+				<div>
+					<input type="radio" name="gopro" id="proplayer" value="proplayer" />
+					<label for="proplayer">I am a Professional Player</label>
+				</div>
+			</fieldset>
+			<label for="comment">Any Other Remark/Comment</label>
+			<textarea name="comment" id="comment" rows="10"></textarea>
+			<button type="submit" id="submit">Submit</button>
+		</form>
+
 		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	</body>
 </html>
